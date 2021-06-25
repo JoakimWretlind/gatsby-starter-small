@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Boilerplate`,
-    description: `Boilerplate to get your Gatsby up and running inno time.`,
+    description: `Boilerplate to get your Gatsby up and running in no time.`,
     author: `Joakim Wretlind`,
   },
   plugins: [
@@ -11,6 +11,20 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/src/assets`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `minimal-ui`,
+        icon: `src/assets/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`
