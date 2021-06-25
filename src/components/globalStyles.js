@@ -16,8 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-family: 'lato', sans-serif;
-    font-size: 3rem;
-    color: #663399;
+  }
   
   a {
     text-decoration: none;
