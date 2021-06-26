@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import React from "react"
 import { GlobalStyle } from "../components/globalStyles"
 
